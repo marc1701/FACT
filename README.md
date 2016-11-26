@@ -94,7 +94,7 @@ __Output:__ detection structure including all input parameters for reference.
 __Input__ String:
 `'notchFilters'`: Use bank of 8 notch filters for howl cancellation.
 'bandpassFilters': Use bank of octave-band bandpass filters for howl cancellation (note
-hat this option is unfinished). Defaults to 'notchFilters'.
+that this option is unfinished). Defaults to 'notchFilters'.
 
 __Output__ filterdata Structure
 Includes data on the how the filters changed over time, along with a timestamp that
@@ -134,7 +134,7 @@ simulation.gain = -15;
 ---
 
 by Marc Ciufo Green
-Audiolab
+Audio Lab
 Department of Electronics
 University of York
 
