@@ -89,7 +89,7 @@ history buffer.analysis (default 16).
 
 __Output:__ detection structure including all input parameters for reference.
 
-**********************************DESTRUCTION***********************************
+###Destruction###
 
 __Input__ String:
 `'notchFilters'`: Use bank of 8 notch filters for howl cancellation.
@@ -101,12 +101,13 @@ Includes data on the how the filters changed over time, along with a timestamp t
 specifies when (simulated time in seconds) these changes occurred. Also includes final
 aggregated magnitude response curve of the filters.
 
-********************************************************************************
+---
 
 Example #1: Findpeaks active, secondary analysis PAPR (20dB threshold) and primary analysis
 PMP (8 frame persistence). -15dB loop gain. Linear chart plot:
 
-```detection.findpeaksActive = 'y';
+```MATLAB
+detection.findpeaksActive = 'y';
 detection.secondary.type = 'PAPR';
 detection.secondary.threshold = 20;
 detection.primary.type = 'PMP';
@@ -116,16 +117,19 @@ simulation.stimulus = 'exampleStimulus.wav';
 simulation.IR = 'exampleIR.wav';
 simulation.gain = -15;
 
-[sim,det,filtData] = FACT(simulation,detection);```
+[sim,det,filtData] = FACT(simulation,detection);
+```
 
 Example #2: Primary analysis MSD, bufferlength 16 (default).
 
-```detection.primary.type = 'MSD';
+```MATLAB
+detection.primary.type = 'MSD';
 simulation.stimulus = 'exampleStimulus.wav';
 simulation.IR = 'exampleIR.wav';
 simulation.gain = -15;
 
-[sim,det,filtData] = FACT(simulation,detection);```
+[sim,det,filtData] = FACT(simulation,detection);
+```
 
 ---
 
