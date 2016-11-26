@@ -133,15 +133,15 @@ simulation.gain = -15;
 
 ---
 
-by Marc Ciufo Green
-Audio Lab
-Department of Electronics
-University of York
+by Marc Ciufo Green  
+Audio Lab  
+Department of Electronics  
+University of York  
 
 Thanks to my supervisors Dr. John Szymanski and Dr. Matthew Speed
 
-Thanks to Robert Bemis for round2
+Thanks to Robert Bemis for round2  
 http://uk.mathworks.com/matlabcentral/fileexchange/4261-round2/content/round2.m
 
-Thanks to sparafucile17 for save_fig
+Thanks to sparafucile17 for save_fig  
 http://www.dsprelated.com/showcode/223.php
