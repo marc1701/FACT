@@ -9,7 +9,8 @@ microphone. Allows testing of the effectiveness of various methods of feedback h
 detection and various methods of feedback howl cancellation. The code is split into three
 main sections:
 
-###Simulation###
+Simulation
+------------
 
 The main overlap/add convolution process that is designed to cause realistic buildup of
 virtual acoustic feedback howls.
@@ -49,7 +50,8 @@ for the entirety of the loop.
 
 Output structure will also contain all input parameters for reference.
 
-###Detection###
+Detection
+-----------
 
 __Input:__ 
 Structure including the following fields:
@@ -89,7 +91,8 @@ history buffer.analysis (default 16).
 
 __Output:__ detection structure including all input parameters for reference.
 
-###Destruction###
+Destruction
+-------------
 
 __Input__ String:
 `'notchFilters'`: Use bank of 8 notch filters for howl cancellation.
@@ -124,6 +127,7 @@ Example #2: Primary analysis MSD, bufferlength 16 (default).
 
 ```MATLAB
 detection.primary.type = 'MSD';
+detection.primary.evaluation = 'summing';
 simulation.stimulus = 'exampleStimulus.wav';
 simulation.IR = 'exampleIR.wav';
 simulation.gain = -15;
